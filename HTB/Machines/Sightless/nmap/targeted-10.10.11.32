@@ -1,0 +1,1 @@
+# Nmap 7.94SVN scan initiated Thu Oct 31 12:29:20 2024 as: nmap -sCV -p21,22,80 -oN targeted-10.10.11.32 10.10.11.32

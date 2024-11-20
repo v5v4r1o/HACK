@@ -1,0 +1,4 @@
+admin:31a181c8372e3afc59dab863:greencacti2001
+dthompson:c585d01f2eb3e6e1073e9202:
+marcus:$2y$10$Fq8wGXvlM3Le.5LIzmM9weFs9s6W2i1FLg3yrdNGmkIaxo79IBjtK
+cactiuser:cactiuser -> mysql

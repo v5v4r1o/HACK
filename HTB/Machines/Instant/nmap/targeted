@@ -1,0 +1,22 @@
+# Nmap 7.94SVN scan initiated Fri Nov  8 13:33:36 2024 as: nmap -sCV -p22,80 -vvv -Pn -n -oN targeted 10.10.11.37
+Nmap scan report for 10.10.11.37
+Host is up, received user-set (0.072s latency).
+Scanned at 2024-11-08 13:33:36 WET for 9s
+
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 9.6p1 Ubuntu 3ubuntu13.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 31:83:eb:9f:15:f8:40:a5:04:9c:cb:3f:f6:ec:49:76 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMM6fK04LJ4jNNL950Ft7YHPO9NKONYVCbau/+tQKoy3u7J9d8xw2sJaajQGLqTvyWMolbN3fKzp7t/s/ZMiZNo=
+|   256 6f:66:03:47:0e:8a:e0:03:97:67:5b:41:cf:e2:c7:c7 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL+zjgyGvnf4lMAlvdgVHlwHd+/U4NcThn1bx5/4DZYY
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.58
+|_http-title: Did not follow redirect to http://instant.htb/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+Service Info: Host: instant.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov  8 13:33:45 2024 -- 1 IP address (1 host up) scanned in 9.07 seconds

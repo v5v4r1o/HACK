@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Fri Jul  5 08:42:35 2024 as: nmap -sS --open -p- --min-rate=5000 -Pn -n -oG targeted 10.129.7.49
+Host: 10.129.7.49 ()	Status: Up
+Host: 10.129.7.49 ()	Ports: 22/open/tcp//ssh///, 6789/open/tcp//ibm-db2-admin///, 8080/open/tcp//http-proxy///, 8443/open/tcp//https-alt///, 8843/open/tcp/////, 8880/open/tcp//cddbp-alt///	Ignored State: closed (65529)
+# Nmap done at Fri Jul  5 08:42:49 2024 -- 1 IP address (1 host up) scanned in 13.30 seconds

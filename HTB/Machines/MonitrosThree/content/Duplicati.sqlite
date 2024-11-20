@@ -1,0 +1,124 @@
+SQLite format 3@  )
+O��                ).WJ
+ �
+  �
+   X
+�}tableTempFileTempFileCREATE TABLE "TempFile" (
+    "ID" INTEGER PRIMARY KEY,
+    "Origin" TEXT NOT NULL, 
+    "Path" TEXT NOT NULL, 
+    "Timestamp" INTEGER NOT NULL,
+    "Expires" INTEGER NOT NULL
+)�
+CREATE TABLE "UIStorage" (e
+    "Scheme" TEXT NOT NULL, 
+    "Key" TEXT NOT NULL, 
+    "Value" TEXT NOT NULL
+)�
+  %%�_tableNotificationNotification
+                                   CREATE TABLE "Notification" (
+    "ID" INTEGER PRIMARY KEY,
+    "Type" TEXT NOT NULL,
+    "Title" TEXT NOT NULL,
+    "Message" TEXT NOT NULL, 
+    "Exception" TEXT NOT NULL, 
+    "BackupID" TEXT NULL,
+    "Action" TEXT NOT NULL,
+    "Timestamp" INTEGER NOT NULL,
+    "LogEntryID" TEXT NULL,
+    "MessageID" TEXT NULL,
+    "MessageLogTag" TEXT NULL
+)u
+AtableVersionVersion
+                    CREATE TABLE "Version" (
+    "ID" INTEGER PRIMARY KEY,
+    "Version" INTEGER NOT NULL
+)�)	�%tableErrorLogErrorLog
+CREATE TABLE "ErrorLog" (
+    "BackupID" INTEGER,
+    "Message" TEXT NOT NULL,
+    "Exception" TEXT,
+    "Timestamp" INTEGER NOT NULL
+)��AtableLogLog	CREATE TABLE "Log" (
+    "BackupID" INTEGER NOT NULL,
+    "Description" TEXT NOT NULL,
+    "Start" INTEGER NOT NULL,
+    "Finish" INTEGER NOT NULL,
+    "Result" TEXT NOT NULL,
+    "SuggestedIcon" TEXT NOT NULL
+)��utableMetadataMetadatCREATE TABLE "Metadata" (
+    "BackupID" INTEGER NOT NULL,
+    "Name" TEXT NOT NULL,
+    "Value" TEXT NOT NULL
+)�(�+tableOptionOptionCREATE TABLE "Option" (
+    "BackupID" INTEGER NOT NULL,
+    "Filter" TEXT NOT NULL,
+    "Name" TEXT NOT NULL,
+    "Value" TEXT NOT NULL
+)�5�EtableFilterFilterCREATE TABLE "Filter" (
+    "BackupID" INTEGER NOT NULL,
+    "Order" INTEGER NOT NULL,
+    "Include" INTEGER NOT NULL,
+    "Expression" TEXT NOT NULL
+)o�9tableSourceSourceCREATE TABLE "Source" (
+    "BackupID" INTEGER NOT NULL,
+    "Path" TEXT NOT NULL
+)�i�%tableScheduleScheduleCREATE TABLE "Schedule" (
+    "ID" INTEGER PRIMARY KEY,
+    "Tags" TEXT NOT NULL,
+    "Time" INTEGER NOT NULL,
+    "Repeat" TEXT NOT NULL,
+    "LastRun" INTEGER NOT NULL,
+    "Rule" TEXT NOT NULL
+)P++Ytablesqlite_sequencesqlite_sequenceCREATE TABLE sqlite_sequence(name,seq)��YtableBackupBackupCREATE TABLE "Backup" (
+    "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Description" TEXT NOT NULL DEFAULT '',
+    "Tags" TEXT NOT NULL,
+    "TargetURL" TEXT NOT NULL,
+    "DBPath" TEXT NOT NULL
+��Cacti 1.2.26 Backupfile:///source/opt/backups/cacti//config/CTADPNHLTC.sqlite
+��������HC/source/var/www/html/cacti/uesday,Wednesday,Thursday,Friday,Saturday,Sunday
+�
+ �
+  p
+   S
+    <
+     !
+      �
+       �
+
+'����e ��=
+
+�
+ �
+  �	B	B	B	B	B	B	B	B	B	B	B	B	B	B	B	B	B	B	B	B	B	B	B	B
+                                                                                                                                                                                                 �pC�--asynchronous-upload-limit50oad-limit50#5
+U�(3-LastCompactFinished20241025T110003Z'1-LastCompactStarted20241025T110003Z(3-LastCompactDuration00:00:00.0177860e-�+LastErrorMessageFound 12 remote files that are not recorded in local storage1-LastBackupFinished20241025T110003Z&240820T111518Z'1-LastBackupDuration00:00:03.5034190'
+                                     /-LastBackupStarted20241025T110000Z
+                                                                        -SourceSizeString60.12 MB
+-SourceFilesCount3863	+SourceFilesSize6303964-TargetSizeString19.41 MB-TargetFilesCount12+TargetFilesSize203527091AssignedQuotaSpace-1)!FreeQuotaSpace2294312960+!TotalQuotaSpace8350261248+Backu�����%-�!�Error in updaterSystem.Net.WebException: Error: NameResolutionFailure
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00044] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebClient.GetWebResponse (System.Net.WebRequest request) [0x00000] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebClient.DownloadBits (System.Net.WebRequest request, System.IO.Stream writeStream) [0x000e6] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebClient.DownloadFile (System.Uri address, System.String fileName) [0x00088] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebClient.DownloadFile (System.String address, System.String fileName) [0x00008] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at (wrapper remoting-invoke-with-check) System.Net.WebClient.DownloadFile(string,string)
+�0�-�!�Error in updaterSystem.Net.WebException: Error: NameResolutionFailureLibrary.AutoUpdater.ReleaseType channel) [0x000ee] in <a701dea807af493c8cb16ad2fe09f97c>:0 g�
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00044] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebClient.GetWebResponse (System.Net.WebRequest request) [0x00000] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebClient.DownloadBits (System.Net.WebRequest request, System.IO.Stream writeStream) [0x000e6] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebClient.DownloadFile (System.Uri address, System.String fileName) [0x00088] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at System.Net.WebClient.DownloadFile (System.String address, System.String fileName) [0x00008] in <a8a996a78a804d888710c9e2575d78c8>:0 
+  at (wrapper remoting-invoke-with-check) System.Net.WebClient.DownloadFile(string,string)
+  at Duplicati.Library.AutoUpdater.UpdaterManager.CheckForUpdate (Duplicati.Library.AutoUpdater.ReleaseType channel) [0x000ee] in <a701dea807af493c8cb16ad2fe09f97c>:0 g�
